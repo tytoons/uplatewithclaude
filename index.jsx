@@ -11,6 +11,7 @@ class Header extends React.Component {
     }
 
     drawModals() {
+        console.log('draw modals');
         return (
             <div className='modals'>
                 <div id="myModal" className="modal fade" role="dialog">
@@ -28,6 +29,7 @@ class Header extends React.Component {
     }
 
     emailAdmin() {
+        console.log('email admin');
         window.open('mailto:admin@uplatewithclaude.com?subject=Claude Rocks!');
     }
 
