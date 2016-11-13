@@ -1,0 +1,62 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  background-color: #dcdcdc;
+  vertical-align: middle; }
+  body a {
+    color: white; }
+  body a:hover, body a:focus {
+    color: #ccc; }
+
+.header {
+  background-color: #d1d1d1;
+  color: white;
+  height: 100px;
+  width: 100%;
+  padding: 2em;
+  text-align: left;
+  overflow: hidden; }
+  .header .corner-ribbon {
+    background: #444;
+    color: #f0f0f0;
+    width: 200px;
+    top: 25px;
+    left: -50px;
+    position: absolute;
+    transform: rotate(-45deg);
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    font-size: 14px; }
+  .header .corner-ribbon:before {
+    overflow: hidden; }
+  .header .corner-ribbon:after {
+    overflow: hidden; }
+  .header .title {
+    float: left;
+    font-size: 4em;
+    display: inline;
+    padding-left: 2.5em; }
+  .header .icons {
+    float: right;
+    font-size: 4em;
+    display: inline;
+    color: white; }
+
+.YoutubeHolder {
+  width: 640px;
+  height: 390px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #d1d1d1;
+  text-align: center; }
+
+/*# sourceMappingURL=index.css.map */

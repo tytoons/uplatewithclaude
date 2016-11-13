@@ -1,0 +1,123 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+	font: 100% $font-stack;
+	color: $primary-color;
+	background-color: #dcdcdc;
+	//text-align: center;
+	vertical-align: middle;
+	a { color: white; }
+	a:hover, a:focus {
+		color: #ccc;
+	}
+}
+
+.header {
+	background-color: #d1d1d1;
+    color: white;
+    height: 100px;
+    width: 100%;
+    padding: 2em;
+    text-align: left;
+    overflow: hidden;
+
+    // .wrapper {
+    // 	margin: 50px auto;
+    // 	width: 280 px;
+    // 	height: 370px;
+    // 	background: white;
+    // 	border-radius: 10px;
+    // 	box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+    // }
+    
+	.corner-ribbon {
+		background: #444;
+	    color: #f0f0f0;
+	    width: 200px;
+	    top: 25px;
+	    left: -50px;
+	    position: absolute;
+	    transform: rotate(-45deg);
+	    text-align: center;
+	    line-height: 50px;
+	    letter-spacing: 1px;
+	    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+	    font-size: 14px;
+	}
+
+	.corner-ribbon:before {
+		overflow: hidden;
+	}
+
+	.corner-ribbon:after {
+		overflow: hidden;
+	}
+
+	.title {
+		float: left;
+		font-size: 4em;
+		display: inline;
+		padding-left: 2.5em;
+	}
+
+	.icons {
+		float: right;
+		font-size: 4em;
+		display: inline;
+		color: white;
+	}
+
+	// @media (min-width: 768px)
+	// @media (max-width: 750px) {
+	// 	.title {
+	// 		color: blue;
+	// 		font-size: 3.5em;
+	// 	}
+	// 	.icons {
+	// 		font-size: 3.5em;
+	// 		color: blue;
+	// 		float: left;
+	// 	}
+	// }
+
+	// @media (max-width: 500px) {
+	// 	.title {
+	// 		color: red;
+	// 		padding-left: 3.3em;
+	// 		font-size: 2.75em;
+	// 	}
+	// }
+}
+
+.YoutubeHolder {
+	width: 640px;
+	height: 390px;
+	margin-left: auto;
+	margin-right: auto;
+	// border-style: solid;
+	// border-width: 1px;
+	// border: 1px solid black;
+}
+
+.footer {
+	// width: 100%;
+	// position: absolute;
+	// background-color: #d1d1d1;
+
+	// .logo {
+	// 	width: 50px;
+	// 	margin: 0 auto;
+
+	// 	img {
+	// 		height: 55px;
+	// 	}
+	//}
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #d1d1d1;
+	text-align: center;
+}
