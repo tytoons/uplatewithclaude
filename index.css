@@ -16,6 +16,11 @@ body {
   padding: 2em;
   text-align: left;
   overflow: hidden; }
+  .header .modal-body {
+    position: relative;
+    padding: 15px;
+    text-align: center;
+    color: black; }
   .header .corner-ribbon {
     background: #444;
     color: #f0f0f0;

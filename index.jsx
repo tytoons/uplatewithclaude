@@ -6,24 +6,46 @@ class Header extends React.Component {
     constructor(props) {
         super(props);
         this.displayName = 'Header';
+        this.drawModals = this.drawModals.bind(this);
+        this.emailAdmin = this.emailAdmin.bind(this);
     }
+
+    drawModals() {
+        return (
+            <div className='modals'>
+                <div id="myModal" className="modal fade" role="dialog">
+                  <div className="modal-dialog">
+                    <div className="modal-content">
+                      <div className="modal-body">
+                        <button type="button" className="close" data-dismiss="modal">&times;</button>
+                        <img src='./snapchat.jpg'/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        );
+    }
+
+    emailAdmin() {
+        window.open('mailto:admin@uplatewithclaude.com?subject=Claude Rocks!');
+    }
+
     render() {
         return (
         	<div className='header'>
+                {this.drawModals()}
         		<div className="corner-ribbon">
                     <a href='#s1'>SEASON TWO</a>
                 </div>
         		<div className='title'>Up Late With Claude</div>
                 <div className='icons'>
-                    <a href='#' className='fa fa-envelope-square'></a>
-                    <a href='#' className='fa fa-youtube-square'></a>
+                    <a className='fa fa-envelope-square' onClick={this.emailAdmin}></a>
+                    <a href='https://www.youtube.com/channel/UC3638FLLLpRoXLGnojUGmAg/' target="_blank" className='fa fa-youtube-square'></a>
                     <a href='#' className='fa fa-facebook-square'></a>
                     <a href='#' className='fa fa-twitter-square'></a>
-                    <a href='#' className='fa fa-instagram'></a>
-                    <a href='#' className='fa fa-snapchat-square'></a>
-                </div>
-                <div>
-
+                    <a href='https://www.instagram.com/explore/tags/uplatewithclaude/' target="_blank" className='fa fa-instagram'></a>
+                    <a src='snapchat.jpg' data-toggle="modal" data-target="#myModal" className='fa fa-snapchat-square'></a>
                 </div>
         	</div>
         );
