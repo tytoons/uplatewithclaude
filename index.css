@@ -22,7 +22,7 @@ body {
     text-align: center;
     color: black; }
   .header .corner-ribbon {
-    background: #444;
+    background: red;
     color: #f0f0f0;
     width: 200px;
     top: 25px;
