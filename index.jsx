@@ -29,7 +29,7 @@ class Header extends React.Component {
     }
 
     emailAdmin() {
-        console.log('email admin');
+        console.log('email admins');
         window.open('mailto:admin@uplatewithclaude.com?subject=Claude Rocks!');
     }
 
